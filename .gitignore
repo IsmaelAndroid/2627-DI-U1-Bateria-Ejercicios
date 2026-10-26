@@ -1,0 +1,10 @@
+*.jar
+*.class
+.gradle/
+.kotlin/
+build/
+local.properties
+.idea/
+*.iml
+captures/
+!gradle-wrapper.jar

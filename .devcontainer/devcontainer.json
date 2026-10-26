@@ -1,0 +1,10 @@
+{
+  "name": "DI U1 - Batería de ejercicios",
+  "image": "mcr.microsoft.com/devcontainers/java:1-21",
+  "postCreateCommand": "bash .devcontainer/instalar-kotlin.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": ["fwcd.kotlin"]
+    }
+  }
+}

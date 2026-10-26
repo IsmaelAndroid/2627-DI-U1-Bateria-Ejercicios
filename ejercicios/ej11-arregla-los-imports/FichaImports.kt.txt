@@ -1,0 +1,16 @@
+package com.di.tema1.ui
+
+// EJ11 · A este fichero le faltan TODOS los imports. Arréglalos con Alt + Intro.
+
+@Composable
+fun FichaImports() {
+    var marcada by remember { mutableStateOf(false) }
+    Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Text("Ficha del alumno", style = MaterialTheme.typography.titleLarge)
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Checkbox(checked = marcada, onCheckedChange = { marcada = it })
+            Text("He entregado la práctica")
+        }
+        Button(onClick = { marcada = false }) { Text("Desmarcar") }
+    }
+}
